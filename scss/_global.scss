@@ -1,0 +1,151 @@
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include body-font;
+  font-weight: 700;
+}
+
+.bg-page-header{
+  position: absolute;
+  background-color: $gray-800;
+  background: linear-gradient(20deg, $gray-300 20%, $white 80%);
+  height: 45vh;
+  @include background-cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: $secondary;
+  padding-top: $spacer * 2;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+
+  &:after{
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 140px;
+    background: #fff;
+    left: -5%;
+    top: 100%;
+    transform: rotate(-4deg);
+    transform-origin: left;
+    z-index: -1;
+  }
+}
+
+.more-arrow{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: all .3s ease;
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background: $red;
+    transform: rotate(45deg);
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    margin-top: -4px;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background: $red;
+    transform: rotate(-45deg);
+  }
+}
+
+.mainPage-items{
+  padding-top: 3.5rem;
+  padding-bottom: 1.875rem;
+}
+
+.text-muted { color: $gray-400 !important; }
+
+.color[data-color^="black"] {
+  &:before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      background:  linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(133, 133, 133) 40%, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 80%);
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+  }
+}
+.color[data-color^="white"] {
+  &:before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      background:  linear-gradient(45deg, rgb(235, 233, 231) 0%, rgb(233, 226, 220) 40%, rgb(255, 255, 255) 50%, rgb(235, 233, 231) 80%);
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+  }
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid $gray-200;
+}
+
+.bg-dark{
+  background-color: $secondary !important;
+}
+
+
+
+.page-top-navbar{
+  width: 100%;
+  position: relative;
+  padding: .75rem;
+  a{
+      color: $secondary;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all .3s ease;
+
+      &.active{
+          color: $secondary;
+          font-weight: 700;
+          font-size: 1.1rem;
+      }
+
+      &:hover{
+          color:$primary;
+      }
+      
+  }
+  &:before{
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 1px;
+      height: 100%;
+      background: $gray-200;
+      left: 50%;
+  }
+}
+
+.finance-information{
+  margin: 2rem 0;
+}
