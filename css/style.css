@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Car dealer v5.0.6 ()
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2019 G Communication
  * Licensed under MIT (https://github.com/BlackrockDigital/Car-dealer-app/blob/master/LICENSE)
  */
 
@@ -160,7 +160,7 @@ hr {
     margin-left: 4px;
   }
   50% {
-    margin-left: 10px;
+    margin-left: 8px;
   }
   100% {
     margin-left: 4px;
@@ -172,7 +172,7 @@ hr {
     margin-left: 4px;
   }
   50% {
-    margin-left: 10px;
+    margin-left: 8px;
   }
   100% {
     margin-left: 4px;
@@ -855,11 +855,11 @@ header.masthead .master-head-bg {
 
 .detail-page .detail-section-title {
   position: absolute;
-  top: -1.5rem;
+  top: -1.6rem;
   font-size: 1.25rem;
   font-weight: 700;
   background: #fff;
-  padding: .5rem 2rem .5rem 0;
+  padding: .5rem 1rem .5rem 0;
 }
 
 .detail-page .detail-basic-information {
@@ -1228,6 +1228,12 @@ header.masthead .master-head-bg {
   justify-content: space-between;
   padding: 2rem 1rem;
   margin-top: 2rem;
+  transition: all 350ms ease;
+  transform: translateY(0%);
+  z-index: 1030;
+  left: 0;
+  right: 0;
+  background: transparent;
 }
 
 .navbar > .container,
@@ -1236,6 +1242,15 @@ header.masthead .master-head-bg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar.sticky {
+  background: #fff;
+  margin-top: 0;
+  position: fixed !important;
+  transform: translateY(0);
+  padding: 1rem 0;
+  box-shadow: 0 5px 10px 0 rgba(43, 54, 81, 0.1) !important;
 }
 
 .navbar-brand {
@@ -1412,8 +1427,7 @@ section .section-title span .more-arrow {
 }
 
 section .section-title:hover .more-arrow {
-  -webkit-animation: floatRight .7s ease-in-out infinite;
-          animation: floatRight .7s ease-in-out infinite;
+  margin-left: 8px;
 }
 
 section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav button.owl-prev {

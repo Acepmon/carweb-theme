@@ -6,6 +6,12 @@
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
   margin-top: $spacer * 2;
+  transition: all 350ms ease;
+  transform: translateY(0%);
+  z-index: 1030;
+  left: 0;
+  right: 0;
+  background: transparent;
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
@@ -15,6 +21,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &.sticky {
+    background: #fff;
+    margin-top: 0;
+    position: fixed !important;
+    transform: translateY(0);
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px 0 rgba(43, 54, 81, .1) !important;
   }
 }
 
