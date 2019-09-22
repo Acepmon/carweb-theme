@@ -11,7 +11,7 @@ header.masthead {
   color: $secondary;
   padding-top: $spacer * 5;
 
-  &:after{
+  &:before{
     content: '';
     position: absolute;
     width: 110%;
@@ -215,7 +215,7 @@ header.masthead {
     width: 650px;
     bottom: 0;
     right: -100px;
-    z-index: 5;
+    z-index: 0;
     pointer-events: none;
   }
   

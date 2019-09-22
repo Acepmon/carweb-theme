@@ -2,6 +2,7 @@ section{
     .section-title{
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1.875rem;
 
         h2{
             text-transform: uppercase;
@@ -9,6 +10,12 @@ section{
             font-family: $segoe;
             color: $secondary;
             margin-bottom: 0;
+        }
+        &.text-light{
+            h2{
+                color: $white;
+            }
+            
         }
 
         span{
@@ -28,18 +35,19 @@ section{
                     text-decoration: none;
                 }
             }
-            .more-arrow{
-                margin-left: 4px;
-                margin-top: 4px;
-                width: 8px;
-                height: 8px;
+            i{
+                position: absolute;
+                margin-left: 8px;
+                margin-top: 3px;
+                font-size: 1rem;
+                transition: all .3s ease;
             }
             
         }
 
         &:hover{
-            .more-arrow{
-                margin-left: 8px;
+            i{
+                margin-left: 12px;
             }
         }
     }
