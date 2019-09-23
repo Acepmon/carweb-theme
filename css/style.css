@@ -798,6 +798,10 @@ header.masthead .master-head-bg {
   text-transform: uppercase;
 }
 
+.detail-page .vehicle-info-top .control-ad {
+  display: flex;
+}
+
 .detail-page .vehicle-info-top .vehicle-id {
   margin-top: .5rem;
   margin-left: 1.5rem;
