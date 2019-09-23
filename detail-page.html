@@ -87,11 +87,13 @@
                 <div class="col-md-9">
                   <h1 class="vehicle-title">Santa fe The Prime diesel 2.0 2wd</h1>
                   <p class="vehicle-meta text-muted">18 years 04 lunar eclipses | 16,406 km | petrol | white | auto | direct | Suwon, Singal</p>
-                  <div class="vehicle-price"> <i class="icon-tag"></i> Price: <span>12 Сая ₮</span> </div>
+                  <div class="d-flex align-items-center">
+                    <div class="vehicle-price"> <i class="icon-tag"></i> Price: <span>12 Сая ₮</span> </div>
+                    <div class="vehicle-id">ID: <span>#132456</span></div>
+                  </div>
                 </div>
                 <div class="col-md-3 text-right d-flex justify-content-between flex-column">
                   <div class="vehicle-brand">Hyundai</div>
-                  <div class="vehicle-id">Car ID: <span>#132456</span></div>
                 </div>
               </div>
             </div>
@@ -187,8 +189,8 @@
               </div>
             </div>
 
-            <div class="col-md-12 px-5">
-              <a class="btn btn-danger btn-round btn-block my-4 shadow-red p-3" href="#">Online purchase</a>
+            <div class="col-md-12 px3">
+              <a class="btn btn-danger btn-round btn-block my-4 shadow-red p-3" href="#">Check loan possibilty</a>
               <a class="btn btn-light btn-round btn-block my-4 shadow-soft-blue p-3 btn-icon-left" href="#"><i class="icon-heart"></i>
                 Save to interested</a>
             </div>
@@ -213,12 +215,20 @@
                 <div class="title">Overall</div>
                 <div class="info-list">
                   <ul>
-                    <li><i class="carIcon-car-3"></i>Sedan </li>
-                    <li><span class="color" data-color="white"></span> Pearl white (Interior)</li>
-                    <li><i class="carIcon-seat-belt"></i>5 (Passenger) </li>
-                    <li><span class="color" data-color="black"></span>Black (Exterior)</li>
-                    <li><i class="carIcon-car"></i>4 (door) </li>
-                    <li><i class="fab fa fa-barcode"></i>1FMEU73E89UA22338 </li>
+                    <li><span class="info-icon">
+                        <img src="img/icons/sedan.svg" alt="">
+                        <p>Sedan</p>
+                      </span></li>
+                    <li><span class="info-icon">
+                        <img src="img/icons/passenger.svg" alt="">
+                        <p>5 (passenger)</p>
+                      </span></li>
+                    <li><span class="info-icon">
+                        <img src="img/icons/door.svg" alt="">
+                        <p>4 (Door)</p>
+                      </span></li>
+                      <li><span class="color info-icon" data-color="white"> <p>Pearl white (Interior)</p></span></li>
+                      <li><span class="color info-icon" data-color="black"> <p>Black (Exterior)</p></span></li>
                   </ul>
                 </div>
               </div>
@@ -226,12 +236,31 @@
                 <div class="title">Power</div>
                 <div class="info-list">
                   <ul>
-                    <li><i class="carIcon-engine"></i>1499 L </li>
-                    <li><i class="carIcon-gas-station"></i>Gasoline </li>
-                    <li><i class="carIcon-gearshift"></i>Automatic </li>
-                    <li><i class="carIcon-steering-wheel"></i>Right wheel </li>
-                    <li><i class="carIcon-chassis"></i>4 WD </li>
-                    <li><i class="carIcon-dashboard"></i>180 km/h (Speed limit) </li>
+                      <li><span class="info-icon">
+                          <img src="img/icons/engine.svg" alt="">
+                          <p>2.0 CC</p>
+                        </span>
+                      </li>
+                      <li><span class="info-icon">
+                          <img src="img/icons/wheel.svg" alt="">
+                          <p>Right wheel</p>
+                        </span>
+                      </li>
+                      <li><span class="info-icon">
+                          <img src="img/icons/gearShift.svg" alt="">
+                          <p>Automatic</p>
+                        </span>
+                      </li>
+                      <li><span class="info-icon">
+                          <img src="img/icons/fuel.svg" alt="">
+                          <p>Gasoline</p>
+                        </span>
+                      </li>
+                      <li><span class="info-icon">
+                          <img src="img/icons/transmission.svg" alt="">
+                          <p>4 WD</p>
+                        </span>
+                      </li>
                   </ul>
                 </div>
               </div>
@@ -257,24 +286,40 @@
                 <div class="card-body text-left">
                   <form>
                     <p>Advance payment (first 20%)</p>
-                    <div class="form-row">
-                      <div class="form-group col-md-8">
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="First price ₮">
+                    <div class="select-first-price">
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="20%" name="firstPrice" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="20%">20%</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="30%" name="firstPrice" class="custom-control-input">
+                          <label class="custom-control-label" for="30%">30%</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="40%" name="firstPrice" class="custom-control-input">
+                          <label class="custom-control-label" for="40%">40%</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="50%" name="firstPrice" class="custom-control-input">
+                          <label class="custom-control-label" for="50%">50%</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="60%" name="firstPrice" class="custom-control-input">
+                          <label class="custom-control-label" for="60%">60%</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="70%" name="firstPrice" class="custom-control-input">
+                          <label class="custom-control-label" for="70%">70%</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="80%" name="firstPrice" class="custom-control-input">
+                          <label class="custom-control-label" for="80%">80%</label>
+                        </div>
                       </div>
-                      <div class="form-group col-md-4">
-                        <select class="form-control">
-                          <option>20%</option>
-                          <option>30%</option>
-                          <option>40%</option>
-                          <option>50%</option>
-                          <option>60%</option>
-                        </select>
-                      </div>
-                    </div>
                     <p>Installment period</p>
                     <div class="select-month">
                       <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="6month" name="financeMonth" class="custom-control-input">
+                        <input type="radio" id="6month" name="financeMonth" class="custom-control-input" checked>
                         <label class="custom-control-label" for="6month">6 month</label>
                       </div>
                       <div class="custom-control custom-radio custom-control-inline">
@@ -297,16 +342,17 @@
             <div class="col-md-4">
               <div class="card monthly-payment">
                 <div class="card-body">
-                  <h3>Monthly payment</h3>
-                  <div class="monthly">486,271 $</div>
-                  <div class="info">
-                    <p>1 year interest:</p>
-                    <p class="font-weight-bold">427,938 $</p>
+                  <div class="payment-information">
+                    <div class="info">
+                      <p>First pay</p>
+                      <p class="font-weight-bold">1,400,000 $</p>
+                    </div>
+                    <div class="info">
+                      <p>Monthly paymant</p>
+                      <p class="monthly">427,938 $</p>
+                    </div>
                   </div>
-                  <div class="info">
-                    <p>total cost</p>
-                    <p class="font-weight-bold">24,427,938 $</p>
-                  </div>
+                  <a class="btn btn-light btn-round btn-block my-3 shadow-soft-blue p-2" href="#">loan calculator</a>
                 </div>
               </div>
             </div>
@@ -397,30 +443,6 @@
     </div>
   </section>
 
-  <section class="mainPage-items bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="diagmostic-information">
-            <h1>Diagmostic summary</h1>
-
-            <a class="btn btn-white  my-4 shadow-soft-blue p-3" href="#">+ Performance Condition Check</a>
-            <ul class="diagmostic-list">
-              <li><span data-type="Sheet"></span> Sheet metal 0</li>
-              <li><span data-type="Exchange"></span> Exchange 0</li>
-              <li><span data-type="Corrosion"></span> Corrosion 0</li>
-              <li><span data-type="Scrathes"></span> Scrathes 0</li>
-              <li><span data-type="Uneveness"></span> Uneveness 0</li>
-              <li><span data-type="Damage"></span> Damage 0</li>
-            </ul>
-            <img src="img/car-wireframe.png" alt="">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <section class="bg-white">
     <div class="container">
       <div class="row">
@@ -483,143 +505,670 @@
 
 
   <!-- Hot deal Grid -->
-  <section class="bg-white mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>Hot deal</h2>
-          <span>
-            <a href="#">See all (123)</a>
-            <div class="more-arrow"></div>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="card-list hot-deal">
+  <section class="section card-list">
       <div class="container">
         <div class="row">
+          <div class="section-title">
+            <h2>Hot deal</h2>
+            <span>
+              <a href="#">See all (123) <i class="fab fa fa-angle-right"></i></a>
+            </span>
+          </div>
           <div class="card-slide owl-carousel owl-theme">
-            <!-- card start -->
-            <div class="card">
-              <div class="brand-name"></div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
               <div class="card-img">
                 <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
-                <div class="info">
-                  <span class="carIcon-engine">
-                    <p>1499 L</p>
-                  </span>
-                  <span class="carIcon-car-6">
-                    <p>52,000 KM</p>
-                  </span>
-                  <span class="carIcon-gas-station">
-                    <p>Gasoline</p>
-                  </span>
-                  <span class="carIcon-gearshift">
-                    <p>Automatic</p>
-                  </span>
-                  <span class="carIcon-steering-wheel">
-                    <p>Right wheel</p>
-                  </span>
-                  <span class="color" data-color="white">
-                    <p>White</p>
-                  </span>
-                </div>
+  
                 <div class="card-caption">
-                  <div class="meta">2006/2013 | 17,820km | Gasoline</div>
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
                   <div class="favorite">
                     <i class="icon-heart"></i>
                   </div>
                 </div>
               </div>
-
-              <div class="card-body shadow">
+  
+              <div class="card-body py-2">
                 <div class="card-description">
-                  <div class="card-title">Santa fe The Prime diesel 2.0 2wd</div>
-                  <div class="card-meta">
-                    <div class="status">Change / Finance</div>
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
                     <div class="price">12 Сая ₮</div>
                   </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
                 </div>
-
+  
               </div>
-
+  
             </div>
-            <!-- card end -->
-
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   <!-- Hot deal Grid -->
-  <section class="bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>Similar price</h2>
-          <span>
-            <a href="#">See all (123)</a>
-            <div class="more-arrow"></div>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="card-list usedInMn">
+  <section class="section card-list">
       <div class="container">
         <div class="row">
+          <div class="section-title">
+            <h2>Similar Price</h2>
+          </div>
           <div class="card-slide owl-carousel owl-theme">
-            <!-- card start -->
-            <div class="card">
-              <div class="brand-name"></div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
               <div class="card-img">
                 <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
-                <div class="info">
-                  <span class="carIcon-engine">
-                    <p>1499 L</p>
-                  </span>
-                  <span class="carIcon-car-6">
-                    <p>52,000 KM</p>
-                  </span>
-                  <span class="carIcon-gas-station">
-                    <p>Gasoline</p>
-                  </span>
-                  <span class="carIcon-gearshift">
-                    <p>Automatic</p>
-                  </span>
-                  <span class="carIcon-steering-wheel">
-                    <p>Right wheel</p>
-                  </span>
-                  <span class="color" data-color="white">
-                    <p>White</p>
-                  </span>
-                </div>
+  
                 <div class="card-caption">
-                  <div class="meta">2006/2013 | 17,820km | Gasoline</div>
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
                   <div class="favorite">
                     <i class="icon-heart"></i>
                   </div>
                 </div>
               </div>
-
-              <div class="card-body shadow">
+  
+              <div class="card-body py-2">
                 <div class="card-description">
-                  <div class="card-title">Santa fe The Prime diesel 2.0 2wd</div>
-                  <div class="card-meta">
-                    <div class="status">Change / Finance</div>
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
                     <div class="price">12 Сая ₮</div>
                   </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
                 </div>
-
+  
               </div>
-
+  
             </div>
-            <!-- card end -->
-
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
+            <div class="card cd-box">
+              <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+              <div class="card-img">
+                <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+  
+                <div class="card-caption">
+                  <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card-body py-2">
+                <div class="card-description">
+                  <div class="card-desc-top">
+                    <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                    <div class="price">12 Сая ₮</div>
+                  </div>
+  
+                  <div class="card-meta">
+                    <div class="year">2006/2019</div>
+                  </div>
+                  <div class="status">Change / Finance</div>
+                </div>
+  
+              </div>
+  
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
 
