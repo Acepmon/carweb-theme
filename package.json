@@ -26,6 +26,7 @@
         "@fortawesome/fontawesome-free": "5.9.0",
         "animate.css": "^3.7.2",
         "bootstrap": "4.3.1",
+        "bootstrap-select": "^1.13.11",
         "bootstrap-slider": "^10.6.2",
         "jquery": "3.4.1",
         "owl.carousel": "^2.3.4",

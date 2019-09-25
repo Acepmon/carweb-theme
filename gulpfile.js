@@ -52,6 +52,9 @@ function modules() {
   // Bootstrap
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
     .pipe(gulp.dest('./vendor/bootstrap'));
+  // Bootstrap selecpicker
+  var bootstrapSelect = gulp.src('./node_modules/bootstrap-select/dist/**/*')
+    .pipe(gulp.dest('./vendor/bootstrap-select'));
   // Bootstrap
   var bootstrapSlider = gulp.src('./node_modules/bootstrap-slider/dist/**/*')
     .pipe(gulp.dest('./vendor/bootstrap-slider'));
@@ -80,7 +83,7 @@ function modules() {
     .pipe(gulp.dest('./vendor/simple-line-icons/fonts'));
   var simpleLineIconsCSS = gulp.src('./node_modules/simple-line-icons/css/**')
     .pipe(gulp.dest('./vendor/simple-line-icons/css'));
-  return merge(bootstrap,bootstrapSlider, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS, owlCarousel, owlCarouselThumbs);
+  return merge(bootstrap,bootstrapSlider,bootstrapSelect, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS, owlCarousel, owlCarouselThumbs);
 }
 
 // CSS task
