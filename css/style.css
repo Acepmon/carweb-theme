@@ -1034,6 +1034,7 @@ select {
   font-size: 1.25rem;
   font-weight: 700;
   text-align: left;
+  color: #17191D;
 }
 
 .car-list a.card .card-body .info {
@@ -2261,6 +2262,7 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
 }
 
 .card-list .card {
+  text-decoration: none;
   font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
   position: relative;
   border-color: transparent;
@@ -2443,6 +2445,7 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
   font-size: 1.25rem;
   font-weight: 700;
   text-align: right;
+  color: #17191D;
 }
 
 .card-list .card .card-body .card-description .card-meta {
