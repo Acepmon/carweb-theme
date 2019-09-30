@@ -940,7 +940,7 @@ select {
   margin-top: 1.25rem;
 }
 
-.car-list a.card {
+.car-list .card {
   text-decoration: none;
   background: transparent;
   border-radius: 4px;
@@ -954,11 +954,11 @@ select {
   border: 1px solid #E0E5EB;
 }
 
-.car-list a.card:hover {
+.car-list .card:hover {
   box-shadow: 0 10px 20px -10px rgba(43, 54, 81, 0.2) !important;
 }
 
-.car-list a.card .card-body {
+.car-list .card .card-body {
   display: flex;
   border: none;
   box-sizing: border-box;
@@ -971,7 +971,7 @@ select {
   padding: 0.625rem;
 }
 
-.car-list a.card .card-body .card-img {
+.car-list .card .card-body .card-img {
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -981,7 +981,7 @@ select {
   border-radius: 0;
 }
 
-.car-list a.card .card-body .card-img .premium-tag {
+.car-list .card .card-body .card-img .premium-tag {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -997,25 +997,25 @@ select {
   align-items: center;
 }
 
-.car-list a.card .card-body .card-description {
+.car-list .card .card-body .card-description {
   display: flex;
   width: 100%;
 }
 
-.car-list a.card .card-body .card-caption {
+.car-list .card .card-body .card-caption {
   z-index: 1;
   padding-top: 1rem;
   min-width: 30%;
 }
 
-.car-list a.card .card-body .card-caption .meta {
+.car-list .card .card-body .card-caption .meta {
   text-align: left;
   font-weight: 600;
   font-size: .75rem;
   color: #AAAEB9;
 }
 
-.car-list a.card .card-body .card-caption .favorite {
+.car-list .card .card-body .card-caption .favorite {
   margin-top: 5px;
   font-size: .75rem;
   text-align: left;
@@ -1023,7 +1023,7 @@ select {
   color: #AAAEB9;
 }
 
-.car-list a.card .card-body .card-caption .is-favorited {
+.car-list .card .card-body .card-caption .is-favorited {
   margin-top: 5px;
   font-size: .875rem;
   text-align: left;
@@ -1031,12 +1031,26 @@ select {
   color: #2B3651;
 }
 
-.car-list a.card .card-body .card-caption .is-favorited i {
+.car-list .card .card-body .card-caption .is-favorited i {
   color: #DF2626;
   margin-right: 5px;
 }
 
-.car-list a.card .card-body .card-caption .card-title {
+.car-list .card .card-body .card-caption .is-premium {
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #D68417;
+  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.car-list .card .card-body .card-caption .is-premium img {
+  margin-right: 5px;
+}
+
+.car-list .card .card-body .card-caption .card-title {
   line-height: 1.2rem;
   color: #17191D;
   font-size: 1.125rem;
@@ -1047,18 +1061,18 @@ select {
   text-decoration: none;
 }
 
-.car-list a.card .card-body .card-caption .card-title:hover {
+.car-list .card .card-body .card-caption .card-title:hover {
   color: #2B3651;
 }
 
-.car-list a.card .card-body .card-caption .price {
+.car-list .card .card-body .card-caption .price {
   font-size: 1.25rem;
   font-weight: 700;
   text-align: left;
   color: #17191D;
 }
 
-.car-list a.card .card-body .info {
+.car-list .card .card-body .info {
   margin-left: 10px;
   padding-top: 1rem;
   display: grid;
@@ -1067,7 +1081,7 @@ select {
   width: 100%;
 }
 
-.car-list a.card .card-body .info .info-icon {
+.car-list .card .card-body .info .info-icon {
   display: inline-flex;
   margin-right: 20px;
   margin-bottom: 1.5rem;
@@ -1077,12 +1091,12 @@ select {
   position: relative;
 }
 
-.car-list a.card .card-body .info .info-icon img {
+.car-list .card .card-body .info .info-icon img {
   width: 24px;
   height: 24px;
 }
 
-.car-list a.card .card-body .info .info-icon p {
+.car-list .card .card-body .info .info-icon p {
   font-family: "Segoe UI","Open Sans",Helvetica,sans-serif;
   font-size: .875rem;
   display: inline-block;
@@ -1092,14 +1106,14 @@ select {
   margin-bottom: 0;
 }
 
-.car-list a.card .card-body .info .tag {
+.car-list .card .card-body .info .tag {
   grid-column-start: 1;
   grid-column-end: 4;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.car-list a.card .card-body .info .tag div {
+.car-list .card .card-body .info .tag div {
   display: inline-block;
   padding: .25rem .75rem;
   margin-bottom: .25rem;
@@ -1113,9 +1127,67 @@ select {
   color: #2B3651;
 }
 
-.car-list a.card .card-body .info .tag div:hover {
+.car-list .card .card-body .info .tag div:hover {
   background: #F8F9FB;
   box-shadow: 0 5px 10px 0 rgba(43, 54, 81, 0.1);
+}
+
+.car-list .card.sold .card-body .card-img {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 290px;
+  min-height: 120px;
+  margin-right: 15px;
+  border-radius: 0;
+}
+
+.car-list .card.sold .card-body .card-img::before {
+  content: '';
+  background: #17191D;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+}
+
+.car-list .card.sold .card-body .card-img::after {
+  content: 'SOLD OUT';
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  height: 1.5rem;
+  width: 100%;
+  color: #2B3651;
+  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  left: -4rem;
+  top: 1.8rem;
+  transform: rotate(-45deg);
+}
+
+.car-list.sell-car .card-body .info .sell-action {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.car-list.sell-car .card-body .info .sell-action div {
+  font-size: 1rem !important;
+  display: inline-block;
+  transition: all .3s ease;
+  box-shadow: 0 0 0 0 rgba(43, 54, 81, 0.1);
+  font-size: .75rem;
+  color: #858994;
+  margin: 0 1rem 0 0;
+}
+
+.car-list.sell-car .card-body .info .sell-action div:hover {
+  color: #2B3651;
+  text-decoration: underline;
 }
 
 .detail-page {
