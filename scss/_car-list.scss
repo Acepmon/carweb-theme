@@ -207,6 +207,18 @@ a.card{
                 cursor: pointer;
                 color: $gray-400;
             }
+            .is-favorited{
+                margin-top: 5px;
+                font-size: .875rem;
+                text-align: left;
+                cursor: pointer;
+                color: $secondary;
+
+                i{
+                    color: $red;
+                    margin-right: 5px;
+                }
+            }
             .card-title{
                 line-height: $spacer * 1.2;
                 color: $gray-900;
