@@ -66,6 +66,9 @@ function modules() {
   // Font Awesome Webfonts
   var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
     .pipe(gulp.dest('./vendor/fontawesome-free/webfonts'));
+  // Lottie web animation render
+  var lottie = gulp.src('./node_modules/lottie-web/build/**/*')
+    .pipe(gulp.dest('./vendor/lottie-web'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
@@ -80,7 +83,7 @@ function modules() {
     .pipe(gulp.dest('./vendor/simple-line-icons/fonts'));
   var simpleLineIconsCSS = gulp.src('./node_modules/simple-line-icons/css/**')
     .pipe(gulp.dest('./vendor/simple-line-icons/css'));
-  return merge(bootstrap,bootstrapSelect, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS, owlCarousel, owlCarouselThumbs);
+  return merge(bootstrap,bootstrapSelect, fontAwesomeCSS, fontAwesomeWebfonts,lottie, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS, owlCarousel, owlCarouselThumbs);
 }
 
 // CSS task
