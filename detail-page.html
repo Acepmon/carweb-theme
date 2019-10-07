@@ -35,39 +35,40 @@
 
   <!-- Navigation -->
   <header>
-    <div class="navbar-top">
+    <div class="maz-menu-top">
       <div class="container">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="#">/ About us /</a></li>
-          <li class="nav-item"><a href="#">/ Write wanna buy /</a></li>
-          <li class="nav-item"><a href="#">/ My page /</a></li>
-          <li class="nav-item"><a href="#">Sign up</a></li>
+        <ul class="maz-menu">
+          <li class="maz-menu-item"><a href="#">/ About us /</a></li>
+          <li class="maz-menu-item"><a href="#">/ Write wanna buy /</a></li>
+          <li class="maz-menu-item"><a href="#">/ My page /</a></li>
+          <li class="maz-menu-item"><a href="registration.html">Sign up</a></li>
         </ul>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light" id="maz-nav">
+    <nav class="maz-navbar position-absolute" id="maz-nav">
       <div class="container">
-        <a class="navbar-brand" href="#">Car dealer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="maz-brand" href="#">Car dealer</a>
+        <div class="maz-burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="maz-menu">
+          <ul class="maz-menu-list">
+            <li class="maz-menu-item active">
+              <a class="maz-menu-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="car-list.html">Buy</a>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="car-list.html">Buy</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sell.html">Sell</a>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="sell.html">Sell</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="finance.html">Finance</a>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="finance.html">Finance</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Auction</a>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="#">Auction</a>
             </li>
           </ul>
           <a class="btn btn-danger btn-round my-2 my-sm-0 px-5" href="#">Login</a>
@@ -1346,9 +1347,7 @@
       </div>
 
     </div>
-    <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 370">
-      <polygon points="1920 9.56 0 82.45 0 370 1920 370 1920 9.56" />
-    </svg>
+    
   </footer>
 
   <!-- Bootstrap core JavaScript -->

@@ -34,39 +34,40 @@
 <body>
 
   <!-- Navigation -->
-  <div class="navbar-top">
+  <div class="maz-menu-top">
     <div class="container">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a href="#">/ About us /</a></li>
-        <li class="nav-item"><a href="#">/ Write wanna buy /</a></li>
-        <li class="nav-item"><a href="#">/ My page /</a></li>
-        <li class="nav-item"><a href="#">Sign up</a></li>
+      <ul class="maz-menu">
+        <li class="maz-menu-item"><a href="#">/ About us /</a></li>
+        <li class="maz-menu-item"><a href="#">/ Write wanna buy /</a></li>
+        <li class="maz-menu-item"><a href="#">/ My page /</a></li>
+        <li class="maz-menu-item"><a href="registration.html">Sign up</a></li>
       </ul>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light position-absolute" id="maz-nav">
+  <nav class="maz-navbar position-absolute" id="maz-nav">
     <div class="container">
-      <a class="navbar-brand" href="#">Car dealer</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="maz-brand" href="#">Car dealer</a>
+      <div class="maz-burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="maz-menu">
+        <ul class="maz-menu-list">
+          <li class="maz-menu-item active">
+            <a class="maz-menu-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="car-list.html">Buy</a>
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="car-list.html">Buy</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sell.html">Sell</a>
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="sell.html">Sell</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="finance.html">Finance</a>
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="finance.html">Finance</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Auction</a>
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="#">Auction</a>
           </li>
         </ul>
         <a class="btn btn-danger btn-round my-2 my-sm-0 px-5" href="#">Login</a>
@@ -78,34 +79,13 @@
   <header class="masthead text-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-lg-7 col-md-12">
           <div class="hero-slider owl-carousel owl-theme">
             <div class="slider-item">
-              <div class="slider-text animated slideInLeft" style="top: 0; left: 100px">
-                <h1>Зээлийн хүү</h1>
-              </div>
-              <div class="slider-text animated slideInLeft slider-highlight" style="top: 50px; left: 50px">3%
-              </div>
-              <div class="slider-text animated slideInLeft" style="top: 200px; left: 200px">
-                <h1>Жилийн</h1>
-              </div>
-              <div class="slider-img animated slideInLeft" style="bottom: 0; left: -50px;">
-                <img src="img/slider-1.png" alt="">
-              </div>
+              <img src="img/Slide-1.png" alt="">
             </div>
             <div class="slider-item">
-              <div class="slider-text" style="top: 5%; left: 90px">
-                <h1>Авто машины</h1>
-              </div>
-              <div class="slider-text" style="top: 18%; left: 100px; ">
-                <h1 style="font-size: 2rem;">Дуудлага худалдаа</h1>
-              </div>
-              <div class="slider-img" style="top: 50%; left: 50px;">
-                <img src="img/slider-2.png" alt="" class="img-fluid">
-              </div>
-              <div class="slider-img" style="top: 25%; left: 0; z-index:-1;">
-                <img src="img/auction.png" alt="" class="img-fluid">
-              </div>
+              <img src="img/slider-2.png" alt="">
             </div>
             <div class="slider-item">
               <div id="maz-animation"> </div>
@@ -113,7 +93,7 @@
 
           </div>
         </div>
-        <div class="col-md-5" style="z-index: 1">
+        <div class="col-lg-5 col-md-12" style="z-index: 1">
 
           <div class="card masthead-search shadow-lg-3d">
             <div class="">
@@ -305,7 +285,7 @@
           <div class="row">
 
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <a href="detail-page.html" target="_blank" class="card cd-box">
                   <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -338,7 +318,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <a href="detail-page.html" target="_blank" class="card cd-box">
                   <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -371,7 +351,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <a href="detail-page.html" target="_blank" class="card cd-box">
                   <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -404,7 +384,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <a href="detail-page.html" target="_blank" class="card cd-box">
                   <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -437,7 +417,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -472,7 +452,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -507,7 +487,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -542,7 +522,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -577,7 +557,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -612,7 +592,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -647,7 +627,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -682,7 +662,7 @@
             </div>
             <!-- col-end -->
             <!-- col-start -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -735,7 +715,7 @@
         </div>
         <div class="card-list auction">
           <div class="row">
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -788,7 +768,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -841,7 +821,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -894,7 +874,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -947,7 +927,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1000,7 +980,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1053,7 +1033,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1106,7 +1086,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1159,7 +1139,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1212,7 +1192,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1265,7 +1245,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1318,7 +1298,7 @@
               <!-- card end -->
             </div>
             <!-- col-end -->
-            <div class="col-md-3 px-2">
+            <div class="col-lg-3 col-md-4 px-2">
               <!-- card start -->
               <div class="card cd-box">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
@@ -1589,7 +1569,7 @@
       </div>
     </div>
   </section>
-  <section class="banner mb-5">
+  <section class="banner pb-5 bg-white">
     <div class="container">
       <div class="row">
         <img src="img/banner.png" class="img-fluid" alt="">
@@ -1597,8 +1577,8 @@
     </div>
   </section>
 
-  <!-- Used in Mongolia Grid -->
-  <section class="mainPage-items bg-light">
+  <!-- Free cars -->
+  <section class="mainPage-items bg-light homeFreeCars">
     <div class="container">
       <div class="row">
         <div class="section-title">
@@ -1610,7 +1590,7 @@
 
         <div class="car-list">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1634,7 +1614,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1658,7 +1638,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1682,7 +1662,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1706,7 +1686,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1730,7 +1710,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1754,7 +1734,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1778,7 +1758,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1802,7 +1782,7 @@
               <!-- card end -->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1826,7 +1806,7 @@
               <!-- card end -->
 
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6 px-2">
               <!-- card start -->
               <a  href="detail-page.html" target="_blank" class="card">
                 <div class="card-body">
@@ -1869,12 +1849,12 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="footer-brand">
             CAR DEALER
           </div>
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-lg-6 text-right">
           <ul class="list-inline mb-0">
             <li class="list-inline-item mr-3">
               <a href="#">
@@ -1894,7 +1874,7 @@
           </ul>
         </div>
 
-        <div class="col-md-12 mt-4">
+        <div class="col-lg-12 mt-4">
           <div class="row">
             <div class="col-lg-6 h-100 text-center text-white text-lg-left my-auto">
               <ul class="list-inline mb-2">
@@ -1915,7 +1895,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-6 h-100 text-right text-muted my-auto">
+            <div class="col-lg-6 h-100 text-center text-right text-muted my-auto">
               <ul class="list-inline mb-2">
                 <li class="list-inline-item">
                   <a href="#">Contact us</a>
@@ -1936,7 +1916,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 text-center mt-5">
+        <div class="col-lg-12 text-center mt-5">
           <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
         </div>
       </div>

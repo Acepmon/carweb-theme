@@ -382,3 +382,18 @@
     }
 }
 }
+
+.homeFreeCars{
+    .car-list{
+        margin-top: 0;
+        .card{
+            .card-body{
+                .card-description{
+                    .card-caption{
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
