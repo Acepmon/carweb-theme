@@ -1175,7 +1175,7 @@ select {
 .car-list .card .card-body .card-caption {
   z-index: 1;
   padding-top: 1rem;
-  min-width: 30%;
+  width: 50%;
 }
 
 .car-list .card .card-body .card-caption .meta {
