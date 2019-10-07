@@ -1175,7 +1175,7 @@ select {
 .car-list .card .card-body .card-caption {
   z-index: 1;
   padding-top: 1rem;
-  width: 50%;
+  width: 30%;
 }
 
 .car-list .card .card-body .card-caption .meta {
@@ -1243,12 +1243,11 @@ select {
 }
 
 .car-list .card .card-body .info {
-  margin-left: 10px;
   padding-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  width: 100%;
+  width: 70%;
 }
 
 .car-list .card .card-body .info .info-icon {
@@ -3413,13 +3412,14 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
 
 footer.footer {
   background: #2B3651;
-  background: transparent;
-  margin-top: 4rem;
-  padding-top: 4rem;
+  margin-top: 0;
+  padding-top: 8rem;
   padding-bottom: 4rem;
   position: relative;
   width: 100%;
   z-index: 2;
+  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
 }
 
 footer.footer .footer-svg {
