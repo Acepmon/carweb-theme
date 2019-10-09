@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Car dealer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Owl Carousel core CSS -->
+  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="css/car-icons/style.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+
+  <!-- Animation style for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <a class="maz-mobile-brand" href="#">MAZ.MN</a>
+  <div class="maz-burger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="maz-navbar position-absolute" id="maz-nav">
+    <div class="container">
+      <div class="maz-menu">
+        <a class="maz-brand" href="#">MAZ.MN</a>
+        <ul class="maz-menu-list">
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="index.html">Home </a>
+          </li>
+          <li class="maz-menu-item ">
+            <a class="maz-menu-link" href="car-list.html">Buy</a>
+          </li>
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="sell.html">Sell</a>
+          </li>
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="finance.html">Finance</a>
+          </li>
+          <li class="maz-menu-item">
+            <a class="maz-menu-link" href="#">Auction</a>
+          </li>
+          <li class="maz-menu-item active">
+            <a class="maz-menu-link" href="wishlist.html">Wish list</a>
+          </li>
+          <li class="maz-menu-item">
+            <a class="btn btn-danger btn-round my-2 my-sm-0 px-5" href="#">Login</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12" style="z-index: 1">
+
+          <div class="card masthead-search shadow-lg-3d">
+            <div class="">
+              <div class="card-header px-5 pt-5 pb-3">
+                <h1>Search people's wish list</h1>
+              </div>
+            </div>
+            <div class="tab-content p-5" id="heroTabFilter">
+              <form>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                    <option>Default select</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg btn-round shadow mt-4 px-5">Submit</button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-lg-7 col-md-12 wishList-illustration">
+          <div id="maz-animation"> </div>
+        </div>
+
+        <a href="#hot-deal" class="js-scroll-trigger discover">
+          <span></span>
+          <p>Хүслийн машинууд</p>
+        </a>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- Hot deal Grid -->
+  <section id="hot-deal" class="mainPage-items bg-white ">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>People's wish list</h2>
+          <span>
+            <a> 2345 wishs</a>
+          </span>
+        </div>
+
+        <div class="people-wish-list">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <!-- card start -->
+              <div class="card cd-box">
+                <div class="card-top">
+                  <h2 class="title">Toyota Crown 210 Худалдаж авна</h1>
+                </div>
+                <div class="card-body py-2">
+                  <div class="wish-detail">
+                    <div class="price"><i class="icon-tag"></i> 12сая ~ 15.5сая</div>
+                    <div class="phone"><i class="icon-phone"></i> 9999-9999</div>
+                  </div>
+                  <div class="wish-user">
+                    <div class="profile-img"><img src="img/blog/4.jpg" alt=""></div>
+                    <div class="username">Enkhtuvshin <div class="date">2019-09-20</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- card end -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner pb-5 bg-white">
+    <div class="container">
+      <div class="row">
+        <img src="img/banner.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="footer-brand">
+            CAR DEALER
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 text-right">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-12 mt-4">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 h-100 text-center text-white text-lg-left my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Buy</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Sell</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Auction</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Finance</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-sm-12 h-100 text-center text-right text-muted my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                  <a href="#">Contact us</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#">About us</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#">Customer support</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#">Foriegner support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center mt-5">
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/lottie-web/player/lottie.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
