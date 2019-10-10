@@ -135,8 +135,7 @@
                           transform="translate(-0.075 -0.488)" />
                       </svg>Make premium ad
                     </a>
-                    <a class="btn btn-light btn-round shadow-soft-blue px-3 ml-3" href="#">Verify car</a>
-                    <a class="btn btn-light btn-round shadow-soft-blue px-3 ml-3" href="#">edit</a>
+                    <a class="control-link" href="#">edit</a>
                   </div>
                 </div>
               </div>
@@ -152,7 +151,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <div class="card border-0">
+          <div class="card border-0 cd-box">
             <div class="vehicle-imgSlider owl-carousel owl-theme" data-slider-id="1">
               <div class="vi-slider-item">
                 <img src="img/Cars/1.jpg" alt="">
@@ -189,8 +188,6 @@
           </div>
         </div>
         <div class="col-md-4">
-
-          <div class="row">
             <div class="col-md-12 mb-2">
               <div class="card">
                 <div class="card-body">
@@ -241,22 +238,19 @@
                   class="icon-heart"></i>
                 Save to interested</a>
             </div>
-
-          </div>
-
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Basic information start -->
-  <section class="detail-items bg-white">
+  <section class="detail-items bg-white detail-basic-information">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="detail-basic-information">
-            <div class="detail-section-title">Basic information</div>
+            <div class="detail-section-title"><p>Basic information</p></div>
+          </div>
+          </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="title">Overall</div>
@@ -317,20 +311,19 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- Finance section start -->
-  <section id="loan" class="mainPage-items bg-light text-center mt-5">
+  <section id="loan" class="bg-light text-center mt-5  finance-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center finance-section">
+        <div class="col-md-12 text-center">
           <div class="finance-title">
             <h1>This car I want to buy, how much is the month?</h1>
             <p>Save your money and make an installment.</p>
           </div>
+        </div>
+      </div>
           <div class="row">
             <div class="col-md-8">
               <div class="card shadow-soft-blue">
@@ -379,11 +372,15 @@
                       </div>
                       <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="24month" name="financeMonth" class="custom-control-input">
-                        <label class="custom-control-label" for="24month">24 month</label>
+                        <label class="custom-control-label" for="24month">18 month</label>
                       </div>
                       <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="48month" name="financeMonth" class="custom-control-input">
-                        <label class="custom-control-label" for="48month">48 month</label>
+                        <label class="custom-control-label" for="48month">24 month</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="48month" name="financeMonth" class="custom-control-input">
+                        <label class="custom-control-label" for="48month">30 month</label>
                       </div>
                     </div>
                   </form>
@@ -409,7 +406,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
   </section>
 
@@ -462,14 +458,17 @@
   </div>
 
   <!-- Option information start -->
-  <section class="detail-items bg-white">
+  <section class="detail-items bg-white detail-option-information">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="detail-option-information">
-            <div class="detail-section-title">Option information</div>
-            <div class="row p-3">
-              <div class="col-md-3 p-0">
+            <div class="detail-section-title"><p>Option information</p></div>
+          </div>
+        </div>
+      </div>
+            <div class="row">
+              <div class="col-md-3">
                 <div class="title">Exterior</div>
                 <div class="info-list">
                   <ul>
@@ -480,7 +479,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3 p-0">
+              <div class="col-md-3">
                 <div class="title">Guts</div>
                 <div class="info-list">
                   <ul>
@@ -498,7 +497,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3 p-0">
+              <div class="col-md-3">
                 <div class="title">Safety</div>
                 <div class="info-list">
                   <ul>
@@ -516,7 +515,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3 p-0">
+              <div class="col-md-3">
                 <div class="title">Convenience</div>
                 <div class="info-list">
                   <ul>
@@ -534,12 +533,7 @@
                   </ul>
                 </div>
               </div>
-
-            </div>
           </div>
-          <hr>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -548,7 +542,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="detail-option-information">
-            <div class="detail-section-title">Description</div>
+            <div class="detail-section-title"><p>Description</p></div>
 
             <div class="dealer-description">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ullam, explicabo iure delectus
@@ -560,16 +554,16 @@
           </div>
         </div>
       </div>
-      <hr>
     </div>
     </div>
   </section>
-  <section class="bg-white">
+  <section class="bg-white detail-option-information">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="detail-option-information py-5">
-            <div class="detail-section-title">Retail store</div>
+            <div class="detail-section-title"><p>Retail store</p></div>
+          </div>
+        </div>
             <div class="row">
               <div class="col-md-5">
                 <img src="img/retail.png" alt="" class="img-fluid">
@@ -580,32 +574,28 @@
                     <div class="retail-name">Amgalan auto plaza</div>
                     <div class="retail-phone">999999999</div>
                   </div>
-                  <div class="row py-2">
-                    <div class="col-md-4 font-weight-bold">Retail address</div>
-                    <div class="col-md-8">БЗД, Амгалангийн тойрог / Нохойны хөшөөтэй/ зүүн тийш өнгөрөөд 300м яваад төв
+                  <div class="retail-row">
+                    <div class="row-title">Retail address</div>
+                    <div class="row-info">БЗД, Амгалангийн тойрог / Нохойны хөшөөтэй/ зүүн тийш өнгөрөөд 300м яваад төв
                       замын хойд талд</div>
                   </div>
-                  <div class="row py-2">
-                    <div class="col-md-4 font-weight-bold">open hours</div>
-                    <div class="col-md-8">Monday to Saturday 9:00am to 18:00 pm Lunch 12:00 to 13:00</div>
+                  <div class="retail-row">
+                    <div class="row-title">open hours</div>
+                    <div class="row-info">Monday to Saturday 9:00am to 18:00 pm Lunch 12:00 to 13:00</div>
                   </div>
-                  <div class="row py-2">
-                    <div class="col-md-4 font-weight-bold">A reserved vehicle</div>
-                    <div class="col-md-8">A reserved vehicle</div>
+                  <div class="retail-row">
+                    <div class="row-title">A reserved vehicle</div>
+                    <div class="row-info">A reserved vehicle</div>
                   </div>
-                  <div class="row py-2">
-                    <div class="col-md-4 font-weight-bold">Website</div>
-                    <div class="col-md-8">www.yourdomain.com</div>
+                  <div class="retail-row">
+                    <div class="row-title">Website</div>
+                    <div class="row-info">www.yourdomain.com</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <hr>
-    </div>
-    </div>
   </section>
 
 

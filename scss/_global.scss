@@ -1,6 +1,5 @@
 body {
-  @include body-font;
-  background: $gray-100;
+  font-family: $segoe;
 }
 
 h1,
@@ -309,4 +308,10 @@ hr {
   width: 100%;
   padding-right: 10px !important;
   padding-left: 10px !important;
+}
+
+.card{
+  &.cd-box{
+      margin-bottom: 1rem;
+  }
 }
