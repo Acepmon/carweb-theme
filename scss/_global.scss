@@ -317,8 +317,12 @@ hr {
 }
 
 .fixed-sidebar {
-  width: 100%;
+  width: max-content;
   height: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 .sticky-content {
   width: 124px;
