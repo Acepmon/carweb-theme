@@ -1890,6 +1890,10 @@ select {
   margin-right: 10px;
 }
 
+.detail-page .dealer-information .dealer-img img {
+  width: 100%;
+}
+
 .detail-page .dealer-information .dealer-meta {
   text-align: left;
 }
