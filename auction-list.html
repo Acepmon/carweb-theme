@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Car dealer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap slider CSS -->
+  <link href="vendor/bootstrap-slider/css/bootstrap-slider.min.css" rel="stylesheet">
+  <!-- Owl Carousel core CSS -->
+  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.theme.default.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="css/car-icons/style.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+
+  <!-- Animation style for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body class="detail-page">
+
+  <header class="header-menu">
+    <a class="maz-mobile-brand" href="#">Maz.mn</a>
+    <div class="maz-burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="maz-navbar position-absolute" id="maz-nav">
+      <div class="container">
+        <div class="maz-menu">
+          <a class="maz-brand" href="#">Maz.mn</a>
+          <ul class="maz-menu-list">
+            <li class="maz-menu-item ">
+              <a class="maz-menu-link" href="index.html">Home </a>
+            </li>
+            <li class="maz-menu-item active">
+              <a class="maz-menu-link" href="car-list.html">Buy</a>
+            </li>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="sell.html">Sell</a>
+            </li>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="finance.html">Finance</a>
+            </li>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="#">Auction</a>
+            </li>
+            <li class="maz-menu-item">
+              <a class="maz-menu-link" href="wishlist.html">Wish list</a>
+            </li>
+            <li class="maz-menu-item">
+              <a class="btn btn-danger btn-round my-2 my-sm-0 px-5" href="#">Login</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="maz-menu-top">
+          <ul class="maz-menu">
+            <li class="maz-menu-item"><a href="#">/ About us /</a></li>
+            <li class="maz-menu-item"><a href="#">/ Write wanna buy /</a></li>
+            <li class="maz-menu-item"><a href="my-page.html">/ My page /</a></li>
+            <li class="maz-menu-item"><a href="registration.html">Sign up</a></li>
+          </ul>
+        </div>
+<div class="maz-menu-top">
+          <ul class="maz-menu">
+            <li class="maz-menu-item"><a href="#">/ About us /</a></li>
+            <li class="maz-menu-item"><a href="#">/ Write wanna buy /</a></li>
+            <li class="maz-menu-item"><a href="my-page.html">/ My page /</a></li>
+            <li class="maz-menu-item"><a href="registration.html">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="bg-page-header"></div>
+
+  <div class="fixed-sidebar sticky-top">
+    <div class="sticky-content">
+        <div id="maz-animation"> </div>
+    </div>
+</div>
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="left-bar-title">
+              <h3>Vehicle search</h3>
+              <div class="mh-search-input">
+                <input class="search" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="search-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.4" height="20.4" viewBox="0 0 20.4 20.4">
+                    <path
+                      d="M152.734,14.153a5.385,5.385,0,1,1,5.417-5.385A5.379,5.379,0,0,1,152.734,14.153Zm7.223,0h-.963l-.361-.359a7.857,7.857,0,0,0,1.806-6.342A7.77,7.77,0,0,0,153.7,1.109a7.859,7.859,0,0,0-8.788,8.735,7.9,7.9,0,0,0,6.38,6.7,7.969,7.969,0,0,0,6.38-1.795l.361.359v.957l5.056,5.026a1.315,1.315,0,0,0,1.806,0,1.3,1.3,0,0,0,0-1.795Z"
+                      transform="translate(-144.854 -1.052)" fill="#2b3651" />
+                  </svg>
+                </button>
+              </div>
+          </div>
+
+          <div class="car-filter accordion shadow-soft-blue" id="accordion">
+            <div class="card">
+              <div class="accordian-head" id="carType">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#car-type"
+                    aria-expanded="true" aria-controls="car-type">
+                    Car type<i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+
+              <div id="car-type" class="collapse show" aria-labelledby="carType" data-parent="#accordion">
+                <div class="card-body bg-light grid-radio gr-3">
+                  <div class="cd-radio">
+                    <input type="radio" id="sedan" name="carType" class="custom-control-input">
+                    <label class="custom-control-label " for="sedan"> <img src="img/icons/sedan.svg"
+                        alt=""><span>Sedan</span>
+                    </label>
+                  </div>
+                  <div class="cd-radio">
+                    <input type="radio" id="suv" name="carType" class="custom-control-input">
+                    <label class="custom-control-label" for="suv"> <img src="img/icons/suv.svg" alt=""><span>SUV</span>
+                    </label>
+                  </div>
+                  <div class="cd-radio">
+                    <input type="radio" id="sport" name="carType" class="custom-control-input">
+                    <label class="custom-control-label " for="sport"> <img src="img/icons/sport.svg"
+                        alt=""><span>Sport</span>
+                    </label>
+                  </div>
+                  <div class="cd-radio">
+                    <input type="radio" id="trucks" name="carType" class="custom-control-input">
+                    <label class="custom-control-label " for="trucks"> <img src="img/icons/truck.svg"
+                        alt=""><span>Trucks</span>
+                    </label>
+                  </div>
+                  <div class="cd-radio">
+                    <input type="radio" id="vans" name="carType" class="custom-control-input">
+                    <label class="custom-control-label " for="vans"> <img src="img/icons/van.svg" alt=""><span>Van
+                      </span></label>
+                  </div>
+                  <div class="cd-radio">
+                    <input type="radio" id="bus" name="carType" class="custom-control-input">
+                    <label class="custom-control-label " for="bus"> <img src="img/icons/bus.svg"
+                        alt=""><span>Bus</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="model">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#manufacture"
+                    aria-expanded="false" aria-controls="manufacture">
+                    Manufacturer / Model <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="manufacture" class="collapse" aria-labelledby="model" data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Toyota" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Toyota">Toyota <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Lexus" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Lexus">Lexus <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Nissan" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Nissan">Nissan <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Mercedes benz" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex  justify-content-between" for="Mercedes benz">Mercedes
+                      benz <div class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Volkswagen" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Volkswagen">Volkswagen <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Mini" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Mini">Mini <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Audi" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Audi">Audi <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="BMW" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="BMW">BMW <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Ford" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Ford">Ford <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Land Rover" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Land Rover">Land Rover <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Daihatsu" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Daihatsu">Daihatsu <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Dodge" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Dodge">Dodge <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Honda" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Honda">Honda <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Hyundai" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Hyundai">Hyundai <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Kia" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Kia">Kia <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Jeep" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Jeep">Jeep <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Subaru" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Subaru">Subaru <div
+                        class="text-muted">0</div></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Suzuki" name="carType" class="custom-control-input">
+                    <d class="custom-control-label d-flex justify-content-between" for="Suzuki">Suzuki <div
+                        class="text-muted">0</div></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="year-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#year"
+                    aria-expanded="false" aria-controls="year">
+                    Year <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="year" class="collapse" aria-labelledby="year-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+
+                  <select id="min-year" class="form-control">
+                    <option selected>Select year</option>
+                    <option>...</option>
+                  </select>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="distance">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#distance"
+                    aria-expanded="false" aria-controls="distance">
+                    Distance driven <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="distance" class="collapse" aria-labelledby="distance" data-parent="#accordion">
+                <div class="card-body bg-light">
+
+                  <select id="min-year" class="form-control">
+                    <option selected>Select distance</option>
+                    <option>...</option>
+                  </select>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="price-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#price"
+                    aria-expanded="false" aria-controls="price">
+                    Price / Installment <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="price" class="collapse" aria-labelledby="price-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <select id="min-year" class="form-control">
+                        <option selected>Min</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <select id="min-year" class="form-control">
+                        <option selected>Max</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="color-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#color"
+                    aria-expanded="false" aria-controls="color">
+                    Color <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="color" class="collapse" aria-labelledby="color-accordian" data-parent="#accordion">
+                <div class="card-body bg-light grid-radio gr-2">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="color-black" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex" for="color-black"><span class="color-icon color"
+                        data-color="black">
+                        <p>Хар</p>
+                      </span></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="color-white" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex" for="color-white"><span class="color-icon color"
+                        data-color="white">
+                        <p>Цагаан</p>
+                      </span></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="color-gray" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex" for="color-gray"><span class="color-icon color"
+                        data-color="gray">
+                        <p>Саарал</p>
+                      </span></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="color-red" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex" for="color-red"><span class="color-icon color"
+                        data-color="red">
+                        <p>Улаан</p>
+                      </span></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="color-blue" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex" for="color-blue"><span class="color-icon color"
+                        data-color="blue">
+                        <p>Хөх</p>
+                      </span></label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="color-sea" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex" for="color-sea"><span class="color-icon color"
+                        data-color="sea">
+                        <p>Далайн</p>
+                      </span></label>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="fuel-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#fuel"
+                    aria-expanded="false" aria-controls="fuel">
+                    Fuel <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="fuel" class="collapse" aria-labelledby="fuel-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Gasoline" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Gasoline">Gasoline</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Deisel" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Deisel">Deisel</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="LPG" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="LPG">LPG</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="transmission-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#transmission" aria-expanded="false" aria-controls="transmission">
+                    Transmission <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="transmission" class="collapse" aria-labelledby="transmission-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Auto" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Auto">Auto</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Semi auto" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Semi auto">Semi
+                      auto</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Manual" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Manual">Manual</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="option-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#option"
+                    aria-expanded="false" aria-controls="option">
+                    Option <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="option" class="collapse" aria-labelledby="option-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Sunroof" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Sunroof">Sunroof</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Leather-seat" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Leather-seat">Leather
+                      seat</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Smart-key" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Smart-key">Smart
+                      key</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="passenger-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#passenger"
+                    aria-expanded="false" aria-controls="passenger">
+                    Passenger <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="passenger" class="collapse" aria-labelledby="passenger-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="4-Passenger" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="4-Passenger">4-Passenger</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="5-Passenger" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="5-Passenger">5-Passenger</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="7 Passenger" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="7 Passenger">7
+                      Passenger</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="11-Passenger" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="11-Passenger">11-Passenger</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="15-Passenger" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="15-Passenger">15-Passenger</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="+15-Passenger" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="+15-Passenger">+15-Passenger</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="steeringWheel-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#sterringWheel" aria-expanded="false" aria-controls="sterringWheel">
+                    Steering wheel <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="sterringWheel" class="collapse" aria-labelledby="steeringWheel-accordian"
+                data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Right" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Right">Right</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Left" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Left">Left</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="area-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#area"
+                    aria-expanded="false" aria-controls="area">
+                    Area <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="area" class="collapse" aria-labelledby="area-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Ulaanbaatar" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="Ulaanbaatar">Ulaanbaatar</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Darkhan" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Darkhan">Darkhan</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Erdenet" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Erdenet">Erdenet</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Arkhangai" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Arkhangai">Arkhangai</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="BayanUlgii" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="BayanUlgii">Баян-Өлгий</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Bayakhongor" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="Bayakhongor">Баянхонгор</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Bulgan" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Bulgan">Булган</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="GobAltai" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="GobAltai">Говь-Алтай</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Gobisumber" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="Gobisumber">Говьсүмбэр</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="DornoGobi" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="DornoGobi">Дорноговь</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Dornod" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="Dornod">Дорнод</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="DundGobi" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="DundGobi">Дундговь</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="zavhan" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="zavhan">Завхан</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="uvurkhangai" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="uvurkhangai">Өвөрхангай</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="umnugobi" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="umnugobi">Өмнөговь</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="Sukhbaatar" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="Sukhbaatar">Сүхбаатар</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="selenge" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="selenge">Сэлэнгэ</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="tuv" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="tuv">Төв</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="uvs" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="uvs">Увс</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="hovd" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="hovd">Ховд</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="huvsgul" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="huvsgul">Хөвсгөл</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="hentii" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between" for="hentii">Хэнтий</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="accordian-head" id="area-accordian">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#verify"
+                    aria-expanded="false" aria-controls="verify">
+                    Doctor's verified <i class="fab fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="verify" class="collapse" aria-labelledby="verify-accordian" data-parent="#accordion">
+                <div class="card-body bg-light">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="verified" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="verified">Баталгаажсан</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="not-verified" name="carType" class="custom-control-input">
+                    <label class="custom-control-label d-flex justify-content-between"
+                      for="not-verified">Баталгаажаагүй</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- car filter end -->
+        </div>
+        <!-- left bar end -->
+        <div class="col-lg-9 col-md-8">
+          <div class="row">
+            <div class="card shadow-soft-blue page-top-navbar">
+              <div class="d-flex justify-content-start">
+                <span class="total-cars">2345 Vehicles</span>
+                <div class="sort-cars">
+                  <ul>
+                    <li class="active"><a href="#">Recent cars</a></li>
+                    <li><a href="#">Product year</a></li>
+                    <li><a href="#">Income year</a></li>
+                    <li><a href="#">Low price</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="car-list">
+
+              <!-- card start -->
+              <a href="detail-page.html" target="_blank" class="card auction-car">
+
+                <div class="card-body">
+                  <div class="card-img">
+                    <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+                    <div class="maz-auction-time">
+                      <div id="countdown" class="countdown" data-countdown="Jan 5, 2020 15:37:25"></div>
+                    </div>
+                    <img src="img/Cars/2.jpg" class="img-fluid" alt="alt" />
+                  </div>
+
+                  <div class="card-description">
+                    <div class="card-caption">
+                      <div href="#" class="card-title">Hyundai Santa fe</div>
+                      <div class="meta">2006/2013 | 17,820km</div>
+                      <div class="price">12 Сая ₮</div>
+                      <div class="favorite"><i class="icon-heart"></i> Add to interest list</div>
+                    </div>
+                    <!-- card info start -->
+                    <div class="info">
+                      <span class="info-icon">
+                        <img src="img/icons/engine.svg" alt="">
+                        <p>1499 L</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/wheel.svg" alt="">
+                        <p>Right</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/gearShift.svg" alt="">
+                        <p>Auto</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/fuel.svg" alt="">
+                        <p>Gasoline</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/transmision.svg" alt="">
+                        <p>4 WD</p>
+                      </span>
+                      <span class="info-icon color" data-color="black">
+                        <p>Black</p>
+                      </span>
+
+                      <div class="tag">
+                        <div onclick="">1 person</div>
+                        <div onclick="">In Garage</div>
+                        <div onclick="">4 Season tire</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                      </div>
+
+                    </div>
+                    <!-- card info end -->
+                  </div>
+                  <!-- card description end -->
+                </div>
+                <!-- card body end -->
+              </a>
+              <!-- card end -->
+              <!-- card start -->
+              <a href="detail-page.html" target="_blank" class="card auction-car">
+
+                <div class="card-body">
+                  <div class="card-img">
+                    <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+                    <div class="maz-auction-time">
+                      <div id="countdown" class="countdown" data-countdown="Jan 5, 2019 15:37:25"></div>
+                    </div>
+                    <img src="img/Cars/2.jpg" class="img-fluid" alt="alt" />
+                  </div>
+
+                  <div class="card-description">
+                    <div class="card-caption">
+                      <div href="#" class="card-title">Hyundai Santa fe</div>
+                      <div class="meta">2006/2013 | 17,820km</div>
+                      <div class="price">12 Сая ₮</div>
+                      <div class="favorite"><i class="icon-heart"></i> Add to interest list</div>
+                    </div>
+                    <!-- card info start -->
+                    <div class="info">
+                      <span class="info-icon">
+                        <img src="img/icons/engine.svg" alt="">
+                        <p>1499 L</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/wheel.svg" alt="">
+                        <p>Right</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/gearShift.svg" alt="">
+                        <p>Auto</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/fuel.svg" alt="">
+                        <p>Gasoline</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/transmision.svg" alt="">
+                        <p>4 WD</p>
+                      </span>
+                      <span class="info-icon color" data-color="black">
+                        <p>Black</p>
+                      </span>
+
+                      <div class="tag">
+                        <div onclick="">1 person</div>
+                        <div onclick="">In Garage</div>
+                        <div onclick="">4 Season tire</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                      </div>
+
+                    </div>
+                    <!-- card info end -->
+                  </div>
+                  <!-- card description end -->
+                </div>
+                <!-- card body end -->
+              </a>
+              <!-- card end -->
+              <!-- card start -->
+              <a href="detail-page.html" target="_blank" class="card auction-car">
+
+                <div class="card-body">
+                  <div class="card-img">
+                    <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+                    <div class="maz-auction-time">
+                      <div id="countdown" class="countdown" data-countdown="dec 5, 2020 15:37:25"></div>
+                    </div>
+                    <img src="img/Cars/2.jpg" class="img-fluid" alt="alt" />
+                  </div>
+
+                  <div class="card-description">
+                    <div class="card-caption">
+                      <div href="#" class="card-title">Hyundai Santa fe</div>
+                      <div class="meta">2006/2013 | 17,820km</div>
+                      <div class="price">12 Сая ₮</div>
+                      <div class="favorite"><i class="icon-heart"></i> Add to interest list</div>
+                    </div>
+                    <!-- card info start -->
+                    <div class="info">
+                      <span class="info-icon">
+                        <img src="img/icons/engine.svg" alt="">
+                        <p>1499 L</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/wheel.svg" alt="">
+                        <p>Right</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/gearShift.svg" alt="">
+                        <p>Auto</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/fuel.svg" alt="">
+                        <p>Gasoline</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/transmision.svg" alt="">
+                        <p>4 WD</p>
+                      </span>
+                      <span class="info-icon color" data-color="black">
+                        <p>Black</p>
+                      </span>
+
+                      <div class="tag">
+                        <div onclick="">1 person</div>
+                        <div onclick="">In Garage</div>
+                        <div onclick="">4 Season tire</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                      </div>
+
+                    </div>
+                    <!-- card info end -->
+                  </div>
+                  <!-- card description end -->
+                </div>
+                <!-- card body end -->
+              </a>
+              <!-- card end -->
+              <!-- card start -->
+              <a href="detail-page.html" target="_blank" class="card auction-car">
+
+                <div class="card-body">
+                  <div class="card-img">
+                    <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+                    <div class="maz-auction-time">
+                      <div id="countdown" class="countdown" data-countdown="oct 5, 2020 15:37:25"></div>
+                    </div>
+                    <img src="img/Cars/2.jpg" class="img-fluid" alt="alt" />
+                  </div>
+
+                  <div class="card-description">
+                    <div class="card-caption">
+                      <div href="#" class="card-title">Hyundai Santa fe</div>
+                      <div class="meta">2006/2013 | 17,820km</div>
+                      <div class="price">12 Сая ₮</div>
+                      <div class="favorite"><i class="icon-heart"></i> Add to interest list</div>
+                    </div>
+                    <!-- card info start -->
+                    <div class="info">
+                      <span class="info-icon">
+                        <img src="img/icons/engine.svg" alt="">
+                        <p>1499 L</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/wheel.svg" alt="">
+                        <p>Right</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/gearShift.svg" alt="">
+                        <p>Auto</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/fuel.svg" alt="">
+                        <p>Gasoline</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/transmision.svg" alt="">
+                        <p>4 WD</p>
+                      </span>
+                      <span class="info-icon color" data-color="black">
+                        <p>Black</p>
+                      </span>
+
+                      <div class="tag">
+                        <div onclick="">1 person</div>
+                        <div onclick="">In Garage</div>
+                        <div onclick="">4 Season tire</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                      </div>
+
+                    </div>
+                    <!-- card info end -->
+                  </div>
+                  <!-- card description end -->
+                </div>
+                <!-- card body end -->
+              </a>
+              <!-- card end -->
+              <!-- card start -->
+              <a href="detail-page.html" target="_blank" class="card auction-car">
+
+                <div class="card-body">
+                  <div class="card-img">
+                    <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+                    <div class="maz-auction-time">
+                      <div id="countdown" class="countdown" data-countdown="may 5, 2020 15:37:25"></div>
+                    </div>
+                    <img src="img/Cars/2.jpg" class="img-fluid" alt="alt" />
+                  </div>
+
+                  <div class="card-description">
+                    <div class="card-caption">
+                      <div href="#" class="card-title">Hyundai Santa fe</div>
+                      <div class="meta">2006/2013 | 17,820km</div>
+                      <div class="price">12 Сая ₮</div>
+                      <div class="favorite"><i class="icon-heart"></i> Add to interest list</div>
+                    </div>
+                    <!-- card info start -->
+                    <div class="info">
+                      <span class="info-icon">
+                        <img src="img/icons/engine.svg" alt="">
+                        <p>1499 L</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/wheel.svg" alt="">
+                        <p>Right</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/gearShift.svg" alt="">
+                        <p>Auto</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/fuel.svg" alt="">
+                        <p>Gasoline</p>
+                      </span>
+                      <span class="info-icon">
+                        <img src="img/icons/transmision.svg" alt="">
+                        <p>4 WD</p>
+                      </span>
+                      <span class="info-icon color" data-color="black">
+                        <p>Black</p>
+                      </span>
+
+                      <div class="tag">
+                        <div onclick="">1 person</div>
+                        <div onclick="">In Garage</div>
+                        <div onclick="">4 Season tire</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                        <div onclick="">Bank Loan</div>
+                      </div>
+
+                    </div>
+                    <!-- card info end -->
+                  </div>
+                  <!-- card description end -->
+                </div>
+                <!-- card body end -->
+              </a>
+              <!-- card end -->
+             
+              <nav aria-label="Page navigation">
+                <ul class="pagination d-flex justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true"><i class="fab fa fa-angle-left"></i></span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true"><i class="fab fa fa-angle-right"></i></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+        <!-- car list end -->
+      </div>
+      <!-- row end -->
+    </div>
+    <!-- container end -->
+  </section>
+
+  <section class="section card-list my-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Hot deal</h2>
+          <span>
+            <a href="#">See all (123) <i class="fab fa fa-angle-right"></i></a>
+          </span>
+        </div>
+        <div class="card-slide owl-carousel owl-theme">
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card cd-box">
+            <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
+            <div class="card-img">
+              <img src="img/Cars/1.jpg" class="img-fluid" alt="alt">
+
+              <div class="card-caption">
+                <div class="meta">17,820km | Gasoline | 2.5 CC</div>
+                <div class="favorite">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body py-2">
+              <div class="card-description">
+                <div class="card-desc-top">
+                  <a href="detail-page.html" class="card-title">Hyundai Santa fe</a>
+                  <div class="price">12 Сая ₮</div>
+                </div>
+
+                <div class="card-meta">
+                  <div class="year">2006/2019</div>
+                </div>
+                <div class="status">Change / Finance</div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-brand">
+            CAR DEALER
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-12 mt-4">
+          <div class="row">
+            <div class="col-lg-6 h-100 text-center text-white text-lg-left my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Buy</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Sell</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Auction</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Finance</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 h-100 text-right text-muted my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                  <a href="#">Contact us</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#">About us</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#">Customer support</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#">Foriegner support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 text-center mt-5">
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/owl.carousel.thumbs/owl.carousel2.thumbs.min.js"></script>
+
+  <script src="vendor/lottie-web/player/lottie.min.js"></script>
+  <script src="js/script.min.js"></script>
+
+  <script>
+var carList = $('.auction-car');
+
+    carList.each(function(i,e){
+
+      
+      var mazCountdown = $(e).find('.countdown');
+      var mazCDtime = mazCountdown.data('countdown');
+
+      console.log(mazCDtime);
+      var countDownDate = new Date(mazCDtime).getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        mazCountdown.html(days + "<span>ө</span> " + hours + "<span>ц</span> "
+        + minutes + "<span>м</span> " + seconds + "<span>с</span> ");
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          mazCountdown.html("EXPIRED");
+        }
+      }, 1000);
+    })
+
+
+  </script>
+</body>
+
+</html>
