@@ -60,7 +60,7 @@
               <a class="maz-menu-link" href="finance.html">Finance</a>
             </li>
             <li class="maz-menu-item">
-              <a class="maz-menu-link" href="#">Auction</a>
+              <a class="maz-menu-link" href="auction-list.html">Auction</a>
             </li>
             <li class="maz-menu-item">
               <a class="maz-menu-link" href="wishlist.html">Wish list</a>
@@ -107,10 +107,43 @@
                 <div class="mh-search-input">
                   <input class="search" type="search" placeholder="Search" aria-label="Search">
                   <button type="button" class="search-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20.4" height="20.4" viewBox="0 0 20.4 20.4">
-                      <path
-                        d="M152.734,14.153a5.385,5.385,0,1,1,5.417-5.385A5.379,5.379,0,0,1,152.734,14.153Zm7.223,0h-.963l-.361-.359a7.857,7.857,0,0,0,1.806-6.342A7.77,7.77,0,0,0,153.7,1.109a7.859,7.859,0,0,0-8.788,8.735,7.9,7.9,0,0,0,6.38,6.7,7.969,7.969,0,0,0,6.38-1.795l.361.359v.957l5.056,5.026a1.315,1.315,0,0,0,1.806,0,1.3,1.3,0,0,0,0-1.795Z"
-                        transform="translate(-144.854 -1.052)" fill="#2b3651" />
+                      <svg id="search-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <defs>
+                            <style>
+                                .search-icon-1 {
+                                    fill: #85c9ef;
+                                }
+                    
+                                .search-icon-2 {
+                                    fill: none;
+                                }
+                    
+                                .search-icon-3 {
+                                    fill: #2b3651;
+                                }
+                    
+                                .search-icon-4 {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <title>search-icon</title>
+                        <g id="Group_3443" data-name="Group 3443">
+                            <g id="Ellipse_345" data-name="Ellipse 345">
+                                <circle class="search-icon-1" cx="13.3" cy="13.63" r="9.5" />
+                            </g>
+                            <g id="Ellipse_344" data-name="Ellipse 344">
+                                <circle class="search-icon-2" cx="13.3" cy="13.63" r="9.5" />
+                                <path class="search-icon-3"
+                                    d="M13.3,23.13a9.5,9.5,0,1,1,9.5-9.5A9.51,9.51,0,0,1,13.3,23.13Zm0-17a7.5,7.5,0,1,0,7.5,7.5A7.51,7.51,0,0,0,13.3,6.13Z" />
+                            </g>
+                            <g id="Path_2595" data-name="Path 2595">
+                                <path class="search-icon-3"
+                                    d="M23.15,25.46a1,1,0,0,1-.71-.31l-3.65-3.73a1,1,0,0,1,0-1.41,1,1,0,0,1,1.42,0l3.65,3.74a1,1,0,0,1,0,1.41A1,1,0,0,1,23.15,25.46Z" />
+                            </g>
+                            <path class="search-icon-4"
+                                d="M19.45,14.13a.5.5,0,0,1-.5-.5A5.65,5.65,0,0,0,13.3,8a.5.5,0,0,1,0-1A6.65,6.65,0,0,1,20,13.63.5.5,0,0,1,19.45,14.13Z" />
+                        </g>
                     </svg>
                   </button>
                 </div>
@@ -728,7 +761,7 @@
           <div class="row">
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -753,7 +786,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -781,7 +814,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -806,7 +839,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -834,7 +867,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -859,7 +892,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -887,7 +920,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -912,7 +945,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -940,7 +973,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -965,7 +998,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -993,7 +1026,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -1018,7 +1051,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -1046,7 +1079,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -1071,7 +1104,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -1099,7 +1132,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -1124,7 +1157,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -1152,7 +1185,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -1177,7 +1210,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -1205,7 +1238,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -1230,7 +1263,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -1258,7 +1291,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -1283,7 +1316,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -1311,7 +1344,7 @@
             <!-- col-end -->
             <div class="col-lg-3 col-md-4">
               <!-- card start -->
-              <div class="card cd-box">
+              <div class="card cd-box auction-car">
                 <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                 <div class="card-img">
                   <img src="img/Cars/4.jpg" class="img-fluid" alt="alt">
@@ -1336,7 +1369,7 @@
                     </span>
                   </div>
                   <div class="card-caption">
-                    <div class="countdown">00h:00m:00s</div>
+                    <div id="countdown" class="countdown"  data-countdown="Jan 5, 2020 15:37:25"></div>
                     <div class="favorite">
                       <i class="icon-heart"></i>
                     </div>
@@ -1366,6 +1399,7 @@
         </div>
       </div>
     </div>
+    
   </section>
 
   <!-- Used in Mongolia Grid -->
@@ -1954,6 +1988,48 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/lottie-web/player/lottie.min.js"></script>
   <script src="js/script.min.js"></script>
+
+  <script>
+      var carList = $('.auction-car');
+      
+          carList.each(function(i,e){
+      
+            
+            var mazCountdown = $(e).find('.countdown');
+            var mazCDtime = mazCountdown.data('countdown');
+      
+            console.log(mazCDtime);
+            var countDownDate = new Date(mazCDtime).getTime();
+      
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+      
+              // Get today's date and time
+              var now = new Date().getTime();
+      
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+      
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+              // Display the result in the element with id="demo"
+              mazCountdown.html((hours + days * 24) + "<span>Цаг</span> "
+              + minutes + "<span>Мин</span> " + seconds + "<span>Сек</span> ");
+      
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                mazCountdown.html("EXPIRED");
+              }
+            }, 1000);
+          })
+      
+      
+        </script>
 </body>
 
 </html>
