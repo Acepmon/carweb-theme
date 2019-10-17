@@ -769,7 +769,7 @@
                   <div class="card-img">
                     <div class="premium-tag shadow-soft-blue"><img src="img/icons/corona.svg" alt=""></div>
                     <div class="maz-auction-time">
-                      <div id="countdown" class="countdown" data-countdown="Jan 5, 2019 15:37:25"></div>
+                      <div id="countdown" class="countdown" data-countdown="oct 18, 2019 15:37:25"></div>
                     </div>
                     <img src="img/Cars/2.jpg" class="img-fluid" alt="alt" />
                   </div>
@@ -1491,8 +1491,8 @@ var carList = $('.auction-car');
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        mazCountdown.html(days + "<span>ө</span> " + hours + "<span>ц</span> "
-        + minutes + "<span>м</span> " + seconds + "<span>с</span> ");
+        mazCountdown.html((hours * days * 24) + "<span>Цаг</span> "
+        + minutes + "<span>Мин</span> " + seconds + "<span>Сек</span> ");
 
         // If the count down is finished, write some text
         if (distance < 0) {
