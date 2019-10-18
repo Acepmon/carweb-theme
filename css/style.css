@@ -301,7 +301,8 @@ hr {
 }
 
 .card.cd-box {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  height: 100%;
 }
 
 .fixed-sidebar {
@@ -3036,6 +3037,10 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
   padding: 1.25rem;
 }
 
+.card-list.hot-deal a.card .card-body .card-description {
+  position: relative;
+}
+
 .card-list.hot-deal a.card .card-body .card-description .card-title {
   line-height: 1.2rem;
   color: #17191D;
@@ -3078,10 +3083,6 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
   position: relative;
   border-color: transparent;
   background: transparent;
-}
-
-.card-list .card.cd-box {
-  margin-bottom: 1rem;
 }
 
 .card-list .card .premium-tag {
@@ -3232,6 +3233,10 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
   padding: 1.25rem;
 }
 
+.card-list .card .card-body .card-description {
+  position: relative;
+}
+
 .card-list .card .card-body .card-description .card-desc-top {
   display: flex;
   justify-content: space-between;
@@ -3259,6 +3264,9 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
   font-weight: 700;
   text-align: right;
   color: #17191D;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .card-list .card .card-body .card-description .card-meta {
@@ -3354,7 +3362,11 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
   padding: 1.25rem;
 }
 
-.card-list.auction .card .card-body .card-description .card-desc-top .price {
+.card-list.auction .card .card-body .card-description {
+  position: relative;
+}
+
+.card-list.auction .card .card-body .card-description .card-meta .price {
   font-size: 1rem;
   font-weight: 700;
   text-align: right;
@@ -3364,10 +3376,6 @@ section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav b
 .card-list.auction .card .card-body .card-description .overall {
   font-size: 1rem;
   color: #AAAEB9;
-}
-
-.people-wish-list .card.cd-box {
-  margin-bottom: 1rem;
 }
 
 .people-wish-list .card .card-top {
