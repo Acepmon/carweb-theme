@@ -334,6 +334,31 @@ hr {
   zoom: 0.6 !important;
 }
 
+.banner-slider .owl-dots {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+.banner-slider .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 5px 5px;
+  background: #fff;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+  transition: all .3s linear;
+}
+
+section .owl-theme .owl-dots .owl-dot.active span {
+  background: #2680eb;
+  width: 20px;
+  outline: 0;
+  transition: all .3s linear;
+}
+
 @-webkit-keyframes floatRight {
   0% {
     transform: translateX(0px);
@@ -2926,6 +2951,11 @@ section .owl-theme .owl-dots {
 section .owl-theme .owl-dots .owl-dot.active span, section .owl-theme .owl-dots .owl-dot:hover span {
   background: #2680EB;
   outline: none;
+}
+
+section .owl-theme .owl-dots .owl-dot span {
+  background: #E0E5EB;
+  margin: 5px;
 }
 
 section .owl-carousel .owl-nav button.owl-next, section .owl-carousel .owl-nav button.owl-prev, section .owl-carousel button.owl-dot {

@@ -339,3 +339,30 @@ hr {
 .fixed-sidebar .owl-dot {
   zoom: 0.6!important;
 }
+
+.banner-slider{
+  .owl-dots{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+
+    .owl-dot span {
+      width: 8px;
+      height: 8px;
+      margin: 5px 5px;
+      background: $white;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px;
+      transition: all .3s linear;
+  }
+  }
+}
+
+section .owl-theme .owl-dots .owl-dot.active span {
+  background: #2680eb;
+  width: 20px;
+  outline: 0;
+  transition: all .3s linear;
+}
