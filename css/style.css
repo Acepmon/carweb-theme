@@ -325,6 +325,7 @@ hr {
   width: max-content;
   height: 0;
   display: none;
+  z-index: 1040;
 }
 
 @media (max-width: 768px) {
@@ -2950,6 +2951,7 @@ section .section-title {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.875rem;
+  margin-left: 5px;
 }
 
 section .section-title h2 {

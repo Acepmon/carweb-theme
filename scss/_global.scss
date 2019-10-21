@@ -334,6 +334,7 @@ hr {
   width: max-content;
   height: 0;
   display: none;
+  z-index: 1040;
 
   @media (max-width: 768px) {
     display: none;
