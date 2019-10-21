@@ -335,6 +335,7 @@ hr {
   height: 0;
   display: none;
   z-index: 1040;
+  top: 20px;
 
   @media (max-width: 768px) {
     display: none;
@@ -345,6 +346,20 @@ hr {
   margin-left: 40px;
   display: grid;
   grid-gap: 10px;
+  
+  a{
+    color: $secondary;
+    text-decoration: none;
+  }
+
+  .wish-list{
+    padding: .5rem;
+    h5{
+      margin-top: 1rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .fixed-sidebar .owl-stage {

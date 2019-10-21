@@ -326,6 +326,7 @@ hr {
   height: 0;
   display: none;
   z-index: 1040;
+  top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -339,6 +340,21 @@ hr {
   margin-left: 40px;
   display: grid;
   grid-gap: 10px;
+}
+
+.sticky-content a {
+  color: #2B3651;
+  text-decoration: none;
+}
+
+.sticky-content .wish-list {
+  padding: .5rem;
+}
+
+.sticky-content .wish-list h5 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .fixed-sidebar .owl-stage {
@@ -2568,7 +2584,7 @@ body.menu-absolute .header-menu {
   transform: translateY(0);
   padding: 1rem 0;
   box-shadow: 0 5px 10px 0 rgba(43, 54, 81, 0.1);
-  z-index: 99999;
+  z-index: 1030;
 }
 
 .maz-navbar.sticky.hider {
