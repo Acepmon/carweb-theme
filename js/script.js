@@ -1,16 +1,18 @@
 (function ($) {
 
-    $(document).ready(function () {
+    function stickyBar(){
 
         var conWidth = $('.container').width();
         var offset = $('.container').offset();
 
         $('.fixed-sidebar').css({
             "transform": 'translateX(' + (parseInt(conWidth) + parseInt(offset.left)) + "px)",
-            "display": "block"
+            "visibility": "visible"
         });
 
-    });
+    }
+    $(window).resize(stickyBar);
+    $(document).ready(stickyBar);
 
     $('.maz-burger-menu').on('click', function () {
         $(this).toggleClass('extend');
@@ -258,7 +260,7 @@
 
         console.log(mazMenuDistance);
 
-        if (mazMenuDistance <= 15) {
+        if (mazMenuDistance <= 5) {
             $('.header-menu').addClass('is-mobile');
         } else {
             $('.header-menu').removeClass('is-mobile');
