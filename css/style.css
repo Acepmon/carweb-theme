@@ -1561,6 +1561,22 @@ select {
   fill: #fff;
 }
 
+.car-filter #manufacture .models {
+  display: none;
+}
+
+.car-filter #manufacture .models .models-back {
+  cursor: pointer;
+  color: #2B3651;
+  margin-top: -.5rem;
+  margin-bottom: .5rem;
+  transition: all .3s ease;
+}
+
+.car-filter #manufacture .models .models-back:hover {
+  color: #2680EB;
+}
+
 .car-filter .grid-radio {
   display: grid;
   row-gap: 10px;
