@@ -646,7 +646,7 @@ section .owl-theme .owl-dots .owl-dot.active span {
 
 .intro-advantages {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .intro-advantages .intro-advantage {
@@ -656,6 +656,7 @@ section .owl-theme .owl-dots .owl-dot.active span {
   text-align: center;
   padding: 0 3rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .intro-advantages .intro-advantage:last-child {
@@ -685,8 +686,49 @@ section .owl-theme .owl-dots .owl-dot.active span {
   width: 40px;
 }
 
-.about-main-text .list-items {
-  list-style: decimal;
+.about-heading-title {
+  font-size: 1.625rem;
+  color: #2B3651;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.about-heading-title::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  background: #DF2626;
+  top: 50%;
+  transform: translateX(-50%);
+  margin-left: 60px;
+}
+
+.about-text {
+  color: #2B3651;
+  font-size: 1rem;
+}
+
+.about-text ol {
+  counter-reset: item;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+.about-text ol li {
+  list-style: none;
+  counter-increment: item;
+  padding-left: 30px;
+  position: relative;
+}
+
+.about-text ol li::before {
+  position: absolute;
+  margin-left: -30px;
+  font-weight: 700;
+  content: counter(item) ".";
 }
 
 .about-sequences {
@@ -711,7 +753,7 @@ section .owl-theme .owl-dots .owl-dot.active span {
   width: 100%;
   left: 50%;
   z-index: 0;
-  background: #fff;
+  background: #EAEEF1;
   content: '';
   position: absolute;
 }
@@ -724,7 +766,7 @@ section .owl-theme .owl-dots .owl-dot.active span {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: #fff;
+  background: #EAEEF1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3222,7 +3264,8 @@ section.page-section {
 section.page-section .section-heading {
   text-align: center;
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 1.625rem;
+  margin-bottom: 4rem;
 }
 
 section.body-section {

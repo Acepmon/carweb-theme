@@ -1,6 +1,6 @@
-(function($) {
+(function ($) {
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         var conWidth = $('.container').width();
         var offset = $('.container').offset();
@@ -12,13 +12,13 @@
 
     });
 
-    $('.maz-burger-menu').on('click', function() {
+    $('.maz-burger-menu').on('click', function () {
         $(this).toggleClass('extend');
         $(".maz-navbar").toggleClass('extend');
 
     });
 
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -31,16 +31,16 @@
         }
     });
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         var searchBtn = $('.mh-search-input');
 
-        searchBtn.on('click', function() {
+        searchBtn.on('click', function () {
             $(this).addClass('expand');
             $(this).find('input').focus();
         });
 
-        $("input.search").on('blur', function() {
+        $("input.search").on('blur', function () {
             if ($(this).val().length == 0) {
                 searchBtn.removeClass('expand');
             }
@@ -72,7 +72,7 @@
             }
         });
 
-        $heroSlider.on("changed.owl.carousel", function(e) {
+        $heroSlider.on("changed.owl.carousel", function (e) {
             $(".slider-text").removeClass("animated slideInLeft ");
             $(".slider-img").removeClass("animated slideInLeft ");
 
@@ -109,19 +109,19 @@
         var cardMeta = $(".card-caption > .meta > .show-more");
         var cardInfo = $(".card-img > .info");
 
-        $(document).on('click', '.card-caption > .meta', function(e) {
+        $(document).on('click', '.card-caption > .meta', function (e) {
 
             var element = e.currentTarget.parentElement.parentElement.parentElement;
             element.classList.add("show");
 
-            $(".card-slide .card").each(function(i, el) {
+            $(".card-slide .card").each(function (i, el) {
                 if (el != element) {
                     $(el).removeClass("show");
                 }
             })
 
         });
-        $(document).on('click', '.card-img > .info', function(e) {
+        $(document).on('click', '.card-img > .info', function (e) {
 
             var element = e.currentTarget.parentElement.parentElement;
             element.classList.remove("show");
@@ -212,7 +212,7 @@
     if (isMobile()) {
 
     } else {
-        $(window).on('mousewheel DOMMouseScroll', function(e) {
+        $(window).on('mousewheel DOMMouseScroll', function (e) {
             if (typeof e.originalEvent.detail == 'number' && e.originalEvent.detail !== 0) {
                 if (e.originalEvent.detail > 0) {
                     $('#maz-nav').addClass('hider');
@@ -268,6 +268,19 @@
     $(window).resize(responsiveNav);
     $(document).ready(responsiveNav);
 
+    $("input.manufacture").on("change", function () {
+
+        $(".car-filter .models.active").hide();
+        var subList = $(".car-filter .models." + $(this).val());
+        if (subList.length) {
+            $('.car-filter .manufacturer').hide(300);
+            subList.show(300);
+            $('.models-back').on('click', function () {
+                subList.hide(300);
+                $('.car-filter .manufacturer').show(300);
+            })
+        }
+    });
 
 
 })(jQuery)

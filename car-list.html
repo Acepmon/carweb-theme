@@ -1886,21 +1886,6 @@
 
   <script src="vendor/lottie-web/player/lottie.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script>
-      $("input.manufacture").on("change", function(){
-
-        $(".car-filter .models.active").hide();
-        var subList = $(".car-filter .models."+$(this).val());
-        if (subList.length){
-        $('.car-filter .manufacturer').hide(300);
-      subList.show(300);
-      $('.models-back').on('click', function(){
-        subList.hide(300);
-        $('.car-filter .manufacturer').show(300);
-      })
-    }
-  });
-  </script>
 </body>
 
 </html>
