@@ -157,11 +157,11 @@
       </div>
     </div>
   </section>
-  <section class="page-section">
+  <section class="page-section" id="section-best">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="img/best-zar.png" class="img-fluid" alt="">
+          <div id="best-zar"></div>
         </div>
 
         <div class="col-md-6 d-flex align-items-center">
@@ -180,7 +180,7 @@
       </div>
     </div>
   </section>
-  <section class="page-section bg-light">
+  <section class="page-section bg-light" id="section-special">
     <div class="container">
       <div class="row">
         <div class="col-md-6 d-flex align-items-center">
@@ -196,7 +196,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <img src="img/special-zar.png" class="img-fluid" alt="">
+            <div id="special-zar"></div>
         </div>
       </div>
     </div>
@@ -324,6 +324,46 @@
   <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 
   <script src="vendor/lottie-web/player/lottie.min.js"></script>
+  <script>
+    var bestZar = {
+    container: document.getElementById('best-zar'),
+    renderer: 'svg',
+    loop: false,
+    rendererSettings: {
+        progressiveLoad: true
+    },
+    autoplay: false,
+    path: '/animation/bestAD.json'
+};
+anim1 = bodymovin.loadAnimation(bestZar);
+
+    var specialZar = {
+    container: document.getElementById('special-zar'),
+    renderer: 'svg',
+    loop: false,
+    rendererSettings: {
+        progressiveLoad: true
+    },
+    autoplay: false,
+    path: '/animation/specialAD.json'
+};
+anim2 = bodymovin.loadAnimation(specialZar);
+        
+  $(window).scroll(function() {
+    var oTop = $('#section-best').offset().top - $(window).height()/2;
+    var specTop = $('#section-special').offset().top - $(window).height()/2;
+    if ($(window).scrollTop() >= oTop){
+      anim1.play();
+    }else{
+      anim1.stop();
+    }
+    if ($(window).scrollTop() >= specTop){
+      anim2.play();
+    }else{
+      anim2.stop();
+    }
+});
+</script>
   <script src="js/script.min.js"></script>
 </body>
 
