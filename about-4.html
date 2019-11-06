@@ -349,20 +349,26 @@ anim1 = bodymovin.loadAnimation(bestZar);
 };
 anim2 = bodymovin.loadAnimation(specialZar);
         
-  $(window).scroll(function() {
-    var oTop = $('#section-best').offset().top - $(window).height()/2;
-    var specTop = $('#section-special').offset().top - $(window).height()/2;
-    if ($(window).scrollTop() >= oTop){
-      anim1.play();
-    }else{
-      anim1.stop();
+$(window).scroll(function(){
+  var currentScroll = $(window).scrollTop();
+
+  $('section').each(function(){
+    var $this = $(this);
+    if(($this.offset().top - $(window).height()/2) < currentScroll && currentScroll < ($this.offset().top - $(window).height()/2) + $this.outerHeight()){
+      if(this.id === "section-best"){
+        anim1.play();
+      }else{
+        anim1.stop();
+      }
+      if(this.id === "section-special"){
+        anim2.play();
+      }else{
+        anim2.stop();
+      }
+      console.log(this.id);
     }
-    if ($(window).scrollTop() >= specTop){
-      anim2.play();
-    }else{
-      anim2.stop();
-    }
-});
+  })
+})
 </script>
   <script src="js/script.min.js"></script>
 </body>
