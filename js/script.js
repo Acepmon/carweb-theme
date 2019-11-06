@@ -6,7 +6,7 @@
         var offset = $('.container').offset();
 
         $('.fixed-sidebar').css({
-            "transform": 'translateX(' + (parseInt(conWidth) + parseInt(offset.left)) + "px)",
+            "left": '' + (parseInt(conWidth) + parseInt(offset.left)) + "px",
             "visibility": "visible"
         });
 
@@ -258,9 +258,7 @@
         var mazMenuList = $('.maz-menu-list').offset().left;
         var mazMenuDistance = mazMenuList - brandOffset;
 
-        console.log(mazMenuDistance);
-
-        if (mazMenuDistance <= 5) {
+        if (mazMenuDistance < 10) {
             $('.header-menu').addClass('is-mobile');
         } else {
             $('.header-menu').removeClass('is-mobile');
