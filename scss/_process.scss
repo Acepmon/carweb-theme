@@ -37,6 +37,12 @@
     color: $gray-400;
     cursor: pointer;
 
+    .nav-link{
+      text-decoration: none;
+      color: inherit!important;
+      pointer-events: none;
+    }
+
     label{
       font-family: "Segoe UI","Open Sans",Helvetica,sans-serif;
       display: inline-block;
@@ -94,6 +100,10 @@
     &.done{
       font-weight: 400;
       color: $teal;
+
+      .nav-link{
+        pointer-events: fill;
+      }
 
       &::after{
         content: '';
