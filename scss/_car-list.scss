@@ -103,7 +103,28 @@
 }
 
 .car-filter{
+    .collapse {
+        .card-body {
+            max-height: 250px;
+            overflow-y: auto;
 
+            &::-webkit-scrollbar-track{
+                    background-color: $gray-100;
+                }
+
+                &::-webkit-scrollbar
+                {
+                    width: 6px;
+                }
+
+                &::-webkit-scrollbar-thumb
+                {
+                    border-radius: $spacer;
+                    background-color: $gray-500;
+                }
+        }
+        
+    }
     #manufacture{
         .models{
             display: none;
@@ -403,7 +424,7 @@
 
             .info-icon{
                 display: inline-flex;
-                margin-right: 20px;
+                margin-right: 0;
                 margin-bottom: $spacer * 1.5;
                 font-size: 1.25rem;
                 color: $secondary;
@@ -423,6 +444,7 @@
                     text-align: left;
                     margin-left: 10px;
                     margin-bottom: 0;
+                    line-height: .8rem;
                 }
             }
 
