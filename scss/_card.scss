@@ -126,6 +126,24 @@
                 width: auto !important;
             }
         }
+        .doctor-verified-tag{
+            position: absolute;
+            right: 0;
+            top:0;
+            background: #000;
+            z-index: 1000;
+            max-width: 50%;
+            color: #fff;
+            padding: .5rem 1rem;
+            border-radius: 4px;
+            opacity: 1;
+            box-sizing: border-box;
+            font-weight: 600;
+            span{
+                display: block;
+                color: #FEC400;
+            }
+        }
         .card-img{
             display: block;
             position: relative;

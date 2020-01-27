@@ -271,6 +271,25 @@
             box-shadow: 0 10px 20px -10px rgba(43, 54, 81, .2) !important;
         }
 
+        .doctor-verified-tag{
+            position: absolute;
+            right: 0;
+            top:0;
+            background: #000;
+            z-index: 1000;
+            max-width: 50%;
+            color: #fff;
+            padding: .5rem 1rem;
+            border-radius: 4px;
+            opacity: 1;
+            box-sizing: border-box;
+            font-weight: 600;
+            span{
+                display: block;
+                color: #FEC400;
+            }
+        }
+
     .card-body{
         display: flex;
         border:none;
@@ -307,7 +326,6 @@
                 justify-content: center;
                 align-items: center;
             }
-
             .maz-auction-time{
                 position: absolute;
                 width: 100%;
